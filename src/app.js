@@ -19,7 +19,7 @@ app.post('/grades', (req, res) => {
   const newGrade = { id, name, subject, score };
   grades.push(newGrade);
   console.log('Received POST request, added new grade:', newGrade);
-  res.json({'newgrade': newGrade, 'hello': 'edit'});
+  res.json(newGrade);
 });
 
 const port = 3000;
